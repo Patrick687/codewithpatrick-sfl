@@ -1,0 +1,23 @@
+#dependencies
+node_modules
+package-lock.json
+
+#environment variables
+.env
+
+#build output
+dist/
+build/
+
+#logs
+*.log
+
+#IDE
+.vscode/
+
+# OS
+.DS_Store
+
+#Prisma
+/generated/prisma
+
