@@ -1,7 +1,7 @@
 import { Body, Controller, Get, HttpCode, HttpStatus, Post, Request, UseGuards } from "@nestjs/common";
 import { AuthService } from "./auth.service";
-import { LoginDto, SignupDto } from "./auth.dto";
-import { JwtAuthGuard } from "./jwt.auth.guard";
+import { LoginDto, SignupDto } from "./dto/auth.dto";
+import { JwtAuthGuard } from "./guards/jwt.auth.guard";
 
 /**
  * AuthController handles all authentication-related HTTP requests

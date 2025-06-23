@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
-import { PrismaModule } from './prisma/prisma.module';
 import { AuthModule } from './api/auth/auth.module';
 import { UserModule } from './api/auth/user.module';
+import { LeagueModule } from './api/league/league.module';
+import { PrismaModule } from './prisma/prisma.module';
 
 /**
  * AppModule is the root module of the application
@@ -12,6 +13,7 @@ import { UserModule } from './api/auth/user.module';
         PrismaModule,  // Database connection
         AuthModule,    // Authentication functionality
         UserModule,    // User management
+        LeagueModule, // League management
     ],
 })
 export class AppModule { }
